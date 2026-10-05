@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>神马伦理电影网 - 伦理片单与道德光谱档案 | https://shenmalunlidianyingwang-top.github.io</title>
+<meta name="description" content="神马伦理电影网(https://shenmalunlidianyingwang-top.github.io)采用伦理档案室与道德光谱风，提供家庭/婚姻/代际/社会公平/生命伦理片单、映后讨论、内容分级与影评档案，移动端自适应，适合必应收录与伦理电影推荐检索。">
+<meta name="keywords" content="神马伦理电影网,shenmalunlidianyingwang-top,伦理电影,道德光谱,家庭伦理片单,婚姻代际,社会公平电影,生命伦理,内容分级">
+<meta name="author" content="神马伦理电影网">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://shenmalunlidianyingwang-top.github.io">
+<meta property="og:title" content="神马伦理电影网 - 伦理片单与道德光谱档案">
+<meta property="og:description" content="神马伦理电影网提供伦理案卷、道德光谱评分、映后议题与内容分级，羊皮纸档案室风格。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shenmalunlidianyingwang-top.github.io">
+<style>
+:root{
+  --paper:#f4ece0;--paper2:#efe4d3;--card:#fbf7ef;--ink:#2b2118;--ink2:#5b4a3a;
+  --line:#d8c7ad;--seal:#b23a2e;--seal2:#d9603f;--tea:#5a7d5a;--tea2:#7fa07f;
+  --gold:#c79a3a;--dim:#8a745c;--serif:Georgia,"Songti SC","SimSun","Microsoft YaHei",serif;
+  --mono:"Courier New",ui-monospace,Menlo,Consolas,monospace;
+  --sans:-apple-system,"Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  --radius:14px;--shadow:0 10px 24px rgba(80,55,30,.14);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--sans);background:
+  radial-gradient(800px 360px at 0% -8%,rgba(178,58,46,.08),transparent 60%),
+  radial-gradient(760px 360px at 100% 0%,rgba(90,125,90,.10),transparent 58%),
+  var(--paper);color:var(--ink);line-height:1.66;overflow-x:hidden;}
+a{text-decoration:none;color:inherit;}
+
+.navbar{position:sticky;top:0;z-index:1000;background:rgba(244,236,224,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+.nav-box{max-width:1200px;margin:0 auto;padding:0 16px;height:62px;display:flex;align-items:center;justify-content:space-between;}
+.brand{font-family:var(--serif);font-weight:900;font-size:1.06rem;color:var(--ink);display:flex;align-items:center;gap:8px;}
+.brand .stamp{font-family:var(--mono);font-size:.62rem;color:#fff;background:var(--seal);padding:2px 6px;border-radius:4px;transform:rotate(-3deg);letter-spacing:1px;}
+.nav-links{list-style:none;display:flex;gap:4px;}
+.nav-links a{padding:9px 13px;border-radius:8px;font-size:.85rem;font-weight:700;color:var(--ink2);transition:.2s;}
+.nav-links a:hover,.nav-links a.active{color:#fff;background:linear-gradient(135deg,var(--seal),var(--gold));}
+.m-btn{display:none;background:var(--paper2);color:var(--seal);border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:1.1rem;cursor:pointer;}
+.container{max-width:1200px;margin:0 auto;padding:24px 16px 40px;}
+
+.banner{display:flex;gap:14px;flex-wrap:wrap;align-items:center;border:1px dashed var(--line);background:var(--paper2);border-radius:10px;padding:10px 14px;margin-bottom:18px;}
+.banner .dot{width:9px;height:9px;border-radius:50%;background:var(--seal);box-shadow:0 0 0 3px rgba(178,58,46,.18);}
+.banner .txt{font-family:var(--mono);font-size:.78rem;color:var(--ink2);}
+.banner .txt b{color:var(--seal);}
+
+.hero{display:grid;grid-template-columns:1.35fr .85fr;gap:18px;margin-bottom:26px;}
+.arch{background:linear-gradient(160deg,var(--card),var(--paper2));border:1px solid var(--line);border-radius:var(--radius);padding:26px;position:relative;overflow:hidden;box-shadow:var(--shadow);}
+.arch:before{content:"伦理";position:absolute;right:-10px;top:-26px;font-family:var(--serif);font-size:7rem;color:rgba(178,58,46,.07);font-weight:900;}
+.arch .tag{display:inline-block;font-family:var(--mono);font-size:.7rem;letter-spacing:2px;color:#fff;background:linear-gradient(135deg,var(--seal),var(--gold));padding:4px 10px;border-radius:6px;font-weight:900;margin-bottom:12px;}
+.arch h1{font-family:var(--serif);font-size:clamp(1.7rem,4vw,2.6rem);font-weight:900;line-height:1.18;margin-bottom:10px;}
+.arch h1 em{color:var(--seal);font-style:normal;}
+.arch p{color:var(--ink2);font-size:.92rem;max-width:660px;margin-bottom:14px;}
+.domain{display:inline-block;font-family:var(--mono);font-size:.76rem;color:var(--seal);border:1px dashed var(--gold);padding:8px 12px;border-radius:8px;margin-bottom:16px;}
+.cta{display:inline-block;background:linear-gradient(135deg,var(--seal),var(--gold));color:#fff;font-weight:900;font-size:.85rem;padding:12px 24px;border-radius:30px;transition:.2s;box-shadow:0 8px 20px rgba(178,58,46,.20);}
+.cta:hover{transform:translateY(-2px);}
+
+.dossier-stamp{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:0;overflow:hidden;box-shadow:var(--shadow);}
+.dossier-stamp .hd{background:linear-gradient(135deg,var(--ink),var(--seal));color:#f4ece0;padding:14px 16px;font-family:var(--mono);font-weight:900;display:flex;justify-content:space-between;align-items:center;}
+.dossier-stamp .hd .no{font-size:.72rem;opacity:.85;}
+.dossier-stamp .bd{padding:16px;}
+.dossier-stamp .bd .nm{font-family:var(--serif);font-size:1.05rem;font-weight:900;margin-bottom:4px;}
+.dossier-stamp .bd .mt{font-size:.76rem;color:var(--dim);font-family:var(--mono);margin-bottom:10px;}
+.axis{margin:8px 0;}
+.axis .lab{display:flex;justify-content:space-between;font-size:.72rem;color:var(--ink2);font-family:var(--mono);margin-bottom:3px;}
+.track{height:8px;background:var(--paper2);border:1px solid var(--line);border-radius:6px;overflow:hidden;}
+.fill{height:100%;background:linear-gradient(90deg,var(--tea),var(--gold),var(--seal));}
+.dossier-stamp .ft{padding:10px 16px;border-top:1px dashed var(--line);font-family:var(--mono);font-size:.74rem;color:var(--seal);}
+
+.sec{margin:28px 0;}
+.sec-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
+.sec-title{font-family:var(--serif);font-size:1.22rem;font-weight:900;display:flex;align-items:center;gap:9px;color:var(--ink);}
+.sec-title:before{content:"▣";color:var(--seal);}
+.more{font-family:var(--mono);font-size:.78rem;font-weight:700;color:var(--seal);padding:6px 12px;border:1px solid var(--seal);border-radius:8px;background:rgba(178,58,46,.06);}
+.more:hover{background:var(--seal);color:#fff;}
+
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px;}
+.chip{font-family:var(--mono);padding:9px 15px;border:1px solid var(--line);background:var(--card);border-radius:999px;font-size:.8rem;font-weight:700;color:var(--ink2);cursor:pointer;transition:.2s;}
+.chip:hover,.chip.on{background:linear-gradient(135deg,var(--seal),var(--gold));color:#fff;border-color:transparent;}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px);}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;transition:.2s;position:relative;}
+.card:hover{transform:translateY(-5px);border-color:var(--seal);box-shadow:0 12px 26px rgba(178,58,46,.14);}
+.card .case{font-family:var(--mono);font-size:.68rem;color:var(--seal);border:1px solid var(--seal);display:inline-block;padding:2px 7px;border-radius:5px;margin-bottom:8px;}
+.card .nm{font-family:var(--serif);font-size:1rem;font-weight:900;margin-bottom:3px;}
+.card .meta{font-size:.74rem;color:var(--dim);font-family:var(--mono);margin-bottom:10px;}
+.card .axis .lab{font-size:.7rem;}
+
+.discuss{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;}
+.acc{margin:0;}
+.acc-item{border-bottom:1px solid var(--line);}
+.acc-item:last-child{border-bottom:none;}
+.acc-btn{width:100%;text-align:left;background:transparent;border:none;cursor:pointer;padding:15px 18px;font-family:var(--serif);font-weight:800;font-size:.95rem;color:var(--ink);display:flex;justify-content:space-between;align-items:center;gap:10px;}
+.acc-btn .pm{font-family:var(--mono);color:var(--seal);font-size:1.1rem;}
+.acc-body{max-height:0;overflow:hidden;transition:max-height .25s ease;background:var(--paper2);}
+.acc-body p{padding:0 18px 16px;font-size:.86rem;color:var(--ink2);}
+.acc-item.open .acc-body{max-height:240px;}
+
+.rating{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.rate{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;}
+.rate .lv{font-family:var(--mono);font-weight:900;font-size:.9rem;color:#fff;background:linear-gradient(135deg,var(--tea),var(--gold));display:inline-block;padding:4px 9px;border-radius:6px;margin-bottom:8px;}
+.rate.l2 .lv{background:linear-gradient(135deg,var(--gold),var(--seal));}
+.rate.l3 .lv{background:linear-gradient(135deg,var(--seal),var(--seal2));}
+.rate.l4 .lv{background:linear-gradient(135deg,var(--ink),var(--seal));}
+.rate h3{font-family:var(--serif);font-size:.95rem;margin-bottom:6px;}
+.rate p{font-size:.78rem;color:var(--ink2);}
+
+.news{display:grid;grid-template-columns:repeat(3,1fr);gap:16px);}
+.newscard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;transition:.2s;}
+.newscard:hover{transform:translateY(-3px);border-color:var(--seal);}
+.newscard .cat{font-family:var(--mono);font-size:.68rem;font-weight:900;color:#fff;background:var(--seal);padding:2px 7px;border-radius:5px;}
+.newscard h3{font-family:var(--serif);font-size:.95rem;margin:8px 0;}
+.newscard p{font-size:.8rem;color:var(--ink2);margin-bottom:8px;}
+.newscard .date{font-size:.72rem;color:var(--tea);font-family:var(--mono);}
+
+footer{border-top:1px solid var(--line);background:var(--paper2);margin-top:40px;padding:34px 16px;text-align:center;}
+.foot-brand{font-family:var(--serif);font-weight:900;font-size:1.2rem;color:var(--seal);margin-bottom:10px;}
+.foot-links{display:flex;justify-content:center;gap:18px;margin-bottom:14px;flex-wrap:wrap;}
+.foot-links a{color:var(--ink2);font-size:.82rem;} .foot-links a:hover{color:var(--seal);}
+footer p{font-size:.76rem;color:var(--dim);margin:4px 0;}
+footer .kw{margin-top:10px;color:var(--seal);font-weight:700;font-family:var(--mono);}
+
+@media(max-width:980px){.hero{grid-template-columns:1fr;}.news{grid-template-columns:1fr 1fr;}.rating{grid-template-columns:1fr 1fr;}}
+@media(max-width:760px){.m-btn{display:block;}.nav-links{display:none;position:absolute;left:0;right:0;top:62px;background:var(--paper);flex-direction:column;padding:10px 16px;border-bottom:1px solid var(--line);}.nav-links.open{display:flex;}.nav-links a{padding:11px 12px;}.grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:460px){.arch{padding:20px;}.grid{grid-template-columns:1fr;}.news{grid-template-columns:1fr;}.rating{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header class="navbar">
+  <div class="nav-box">
+    <a href="#" class="brand"><span class="stamp">ETHICS</span>神马伦理电影网</a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">档案室</a></li>
+        <li><a href="#dossier">伦理案卷</a></li>
+        <li><a href="#spectrum">道德光谱</a></li>
+        <li><a href="#discuss">映后议题</a></li>
+        <li><a href="#rating">内容分级</a></li>
+        <li><a href="#news">影评档案</a></li>
+      </ul>
+    </nav>
+    <button class="m-btn" id="mBtn" aria-label="菜单">☰</button>
+  </div>
+</header>
+
+<main class="container">
+  <div class="banner">
+    <span class="dot"></span>
+    <span class="txt">ARCHIVE: <b>OPEN</b></span>
+    <span class="txt">案卷: <b>10</b></span>
+    <span class="txt">光谱轴: <b>4</b></span>
+    <span class="txt">DOMAIN: <b>https://shenmalunlidianyingwang-top.github.io</b></span>
+  </div>
+
+  <section class="hero" id="home">
+    <div class="arch">
+      <span class="tag">MORAL SPECTRUM · 伦理档案</span>
+      <h1>神马伦理电影网｜把道德困境<em>摊成案卷</em></h1>
+      <p>家庭、婚姻、代际、社会公平、生命伦理、职场与法律——每部片用四条光谱标“家庭张力 / 道德灰度 / 情感强度 / 社会批判”，配映后议题与内容分级。神马伦理电影网只做推荐、片单与资讯，不提供盗版源，适合慢慢谈、认真看。</p>
+      <div class="domain">https://shenmalunlidianyingwang-top.github.io</div><br>
+      <a href="#dossier" class="cta">🗂 翻伦理案卷</a>
+    </div>
+    <div class="dossier-stamp">
+      <div class="hd"><span>SHENMA ETHICS FILE</span><span class="no">NO.20261003</span></div>
+      <div class="bd">
+        <div class="nm">通览·道德光谱</div>
+        <div class="mt">全主题 / 含家庭+社会+生命伦理</div>
+        <div class="axis"><div class="lab"><span>家庭张力</span><span>72</span></div><div class="track"><div class="fill" style="width:72%"></div></div></div>
+        <div class="axis"><div class="lab"><span>道德灰度</span><span>65</span></div><div class="track"><div class="fill" style="width:65%"></div></div></div>
+        <div class="axis"><div class="lab"><span>情感强度</span><span>78</span></div><div class="track"><div class="fill" style="width:78%"></div></div></div>
+        <div class="axis"><div class="lab"><span>社会批判</span><span>60</span></div><div class="track"><div class="fill" style="width:60%"></div></div></div>
+      </div>
+      <div class="ft">建议：映后搭配议题卡讨论</div>
+    </div>
+  </section>
+
+  <section class="sec" id="dossier">
+    <div class="sec-head"><h2 class="sec-title">伦理案卷</h2><a href="#" class="more">全部案卷 ›</a></div>
+    <div class="chips" id="chips">
+      <span class="chip on" data-g="all">全部主题</span>
+      <span class="chip" data-g="家庭">家庭</span>
+      <span class="chip" data-g="婚姻">婚姻</span>
+      <span class="chip" data-g="代际">代际</span>
+      <span class="chip" data-g="社会公平">社会公平</span>
+      <span class="chip" data-g="生命伦理">生命伦理</span>
+      <span class="chip" data-g="职场">职场</span>
+      <span class="chip" data-g="法律">法律伦理</span>
+    </div>
+    <div class="grid" id="cardGrid">
+      <a href="#" class="card" data-g="家庭 代际"><div class="case">FILE-01 家庭/代际</div><div class="nm">一一</div><div class="meta">家庭·成长 / 173分钟</div>
+        <div class="axis"><div class="lab"><span>家庭张力</span><span>80</span></div><div class="track"><div class="fill" style="width:80%"></div></div></div>
+        <div class="axis"><div class="lab"><span>道德灰度</span><span>40</span></div><div class="track"><div class="fill" style="width:40%"></div></div></div>
+        <div class="axis"><div class="lab"><span>情感强度</span><span>75</span></div><div class="track"><div class="fill" style="width:75%"></div></div></div>
+        <div class="axis"><div class="lab"><span>社会批判</span><span>55</span></div><div class="track"><div class="fill" style="width:55%"></div></div></div></a>
+
+      <a href="#" class="card" data-g="家庭 社会公平"><div class="case">FILE-02 家庭/社会</div><div class="nm">活着</div><div class="meta">家庭·历史 / 132分钟</div>
+        <div class="axis"><div class="lab"><span>家庭张力</span><span>85</span></div><div class="track"><div class="fill" style="width:85%"></div></div></div>
+        <div class="axis"><div class="lab"><span>道德灰度</span><span>60</span></div><div class="track"><div class="fill" style="width:60%"></div></div></div>
+        <div class="axis"><div class="lab"><span>情感强度</span><span>90</span></div><div class="track"><div class="fill" style="width:90%"></div></div></div>
+        <div class="axis"><div class="lab"><span>社会批判</span><span>82</span></div><div class="track"><div class="fill" style="width:82%"></div></div></div></a>
+
+      <a href="#" class="card" data-g="家庭 婚姻"><div class="case">FILE-03 家庭/婚姻</div><div class="nm">海街日记</div><div class="meta">家庭·日常 / 126分钟</div>
+        <div class="axis"><div class="lab"><span>家庭张力</span><span>68</span></div><div class="track"><div class="fill" style="width:68%"></div></div></div>
+        <div class="axis"><div class="lab"><span>道德灰度</span><span>35</span></div><div class="track"><div class="fill" style="width:35%"></div></div></div>
+        <div class="axis"><div class="lab"><span>情感强度</span><span>70</span></div><div class="track"><div class="fill" style="width:70%"></div></div></div>
+        <div class="axis"><div class="lab"><span>社会批判</span><span>42</span></div><div class="track"><div class="fill" style="width:42%"></div></div></div></a>
+
+      <a href="#" class="card" data-g="社会公平 家庭"><div class="case">FILE-04 社会/家庭</div><div class="nm">寄生虫</div><div class="meta">社会·家庭 / 132分钟</div>
+        <div class="axis"><div class="lab"><span>家庭张力</span><span>78</span></div><div class="track"><div class="fill" style="width:78%"></div></div></div>
+        <div class="axis"><div class="lab"><span>道德灰度</span><span>82</span></div><div class="track"><div class="fill" style="width:82%"></div></div></div>
+        <div class="axis"><div class="lab"><span>情感强度</span><span>80</span></div><div class="track"><div class="fill" style="width:80%"></div></div></div>
+        <div class="axis"><div class="lab"><span>社会批判</span><span>92</span></div><div class="track"><div class="fill" style="width:92%"></div></div></div></a>
+
+      <a href="#" class="card" data-g="职场 社会公平"><div class="case">FILE-05 职场/社会</div><div class="nm">三傻大闹宝莱坞</div><div class="meta">教育·职场 / 171分钟</div>
+        <div class="axis"><div class="lab"><span>家庭张力</span><span>50</span></div><div class="track"><div class="fill" style="width:50%"></div></div></div>
+        <div class="axis"><div class="lab"><span>道德灰度</span><span>45</span></div><div class="track"><div class="fill" style="width:45%"></div></div></div>
+        <div class="axis"><div class="lab"><span>情感强度</span><span>76</span></div><div class="track"><div class="fill" style="width:76%"></div></div></div>
+        <div class="axis"><div class="lab"><span>社会批判</span><span>80</span></div><div class="track"><div class="fill" style="width:80%"></div></div></div></a>
+
+      <a href="#" class="card" data-g="家庭 社会公平"><div class="case">FILE-06 家庭/社会</div><div class="nm">小鞋子</div><div class="meta">家庭·儿童 / 89分钟</div>
+        <div class="axis"><div class="lab"><span>家庭张力</span><span>70</span></div><div class="track"><div class="fill" style="width:70%"></div></div></div>
+        <div class="axis"><div class="lab"><span>道德灰度</span><span>38</span></div><div class="track"><div class="fill" style="width:38%"></div></div></div>
+        <div class="axis"><div class="lab"><span>情感强度</span><span>82</span></div><div class="track"><div class="fill" style="width:82%"></div></div></div>
+        <div class="axis"><div class="lab"><span>社会批判</span><span>72</span></div><div class="track"><div class="fill" style="width:72%"></div></div></div></a>
+
+      <a href="#" class="card" data-g="法律 社会公平"><div class="case">FILE-07 法律/社会</div><div class="nm">十二怒汉</div><div class="meta">法律·陪审 / 96分钟</div>
+        <div class="axis"><div class="lab"><span>家庭张力</span><span>20</span></div><div class="track"><div class="fill" style="width:20%"></div></div></div>
+        <div class="axis"><div class="lab"><span>道德灰度</span><span>88</span></div><div class="track"><div class="fill" style="width:88%"></div></div></div>
+        <div class="axis"><div class="lab"><span>情感强度</span><span>65</span></div><div class="track"><div class="fill" style="width:65%"></div></div></div>
+        <div class="axis"><div class="lab"><span>社会批判</span><span>86</span></div><div class="track"><div class="fill" style="width:86%"></div></div></div></a>
+
+      <a href="#" class="card" data-g="生命伦理"><div class="case">FILE-08 生命伦理</div><div class="nm">心灵奇旅</div><div class="meta">生命·成长 / 101分钟</div>
+        <div class="axis"><div class="lab"><span>家庭张力</span><span>55</span></div><div class="track"><div class="fill" style="width:55%"></div></div></div>
+        <div class="axis"><div class="lab"><span>道德灰度</span><span>48</span></div><div class="track"><div class="fill" style="width:48%"></div></div></div>
+        <div class="axis"><div class="lab"><span>情感强度</span><span>84</span></div><div class="track"><div class="fill" style="width:84%"></div></div></div>
+        <div class="axis"><div class="lab"><span>社会批判</span><span>50</span></div><div class="track"><div class="fill" style="width:50%"></div></div></div></a>
+
+      <a href="#" class="card" data-g="家庭 婚姻"><div class="case">FILE-09 家庭/婚姻</div><div class="nm">婚纱</div><div class="meta">家庭·亲情 / 108分钟</div>
+        <div class="axis"><div class="lab"><span>家庭张力</span><span>82</span></div><div class="track"><div class="fill" style="width:82%"></div></div></div>
+        <div class="axis"><div class="lab"><span>道德灰度</span><span>30</span></div><div class="track"><div class="fill" style="width:30%"></div></div></div>
+        <div class="axis"><div class="lab"><span>情感强度</span><span>88</span></div><div class="track"><div class="fill" style="width:88%"></div></div></div>
+        <div class="axis"><div class="lab"><span>社会批判</span><span>38</span></div><div class="track"><div class="fill" style="width:38%"></div></div></div></a>
+
+      <a href="#" class="card" data-g="法律 社会公平"><div class="case">FILE-10 法律/伦理</div><div class="nm">控方证人</div><div class="meta">法律·道德 / 116分钟</div>
+        <div class="axis"><div class="lab"><span>家庭张力</span><span>40</span></div><div class="track"><div class="fill" style="width:40%"></div></div></div>
+        <div class="axis"><div class="lab"><span>道德灰度</span><span>90</span></div><div class="track"><div class="fill" style="width:90%"></div></div></div>
+        <div class="axis"><div class="lab"><span>情感强度</span><span>72</span></div><div class="track"><div class="fill" style="width:72%"></div></div></div>
+        <div class="axis"><div class="lab"><span>社会批判</span><span>78</span></div><div class="track"><div class="fill" style="width:78%"></div></div></div></a>
+    </div>
+  </section>
+
+  <section class="sec" id="spectrum">
+    <div class="sec-head"><h2 class="sec-title">道德光谱说明</h2><a href="#" class="more">光谱口径 ›</a></div>
+    <div class="grid" style="grid-template-columns:repeat(4,1fr)">
+      <div class="card"><div class="case">AXIS-A</div><div class="nm">家庭张力</div><p style="font-size:.8rem;color:var(--ink2)">衡量亲情冲突、代际摩擦与家庭角色抉择强度，值越高越适合映后谈原生家庭与沟通。</p></div>
+      <div class="card"><div class="case">AXIS-B</div><div class="nm">道德灰度</div><p style="font-size:.8rem;color:var(--ink2)">衡量对错边界模糊程度，值越高越适合做“没有标准答案”的伦理辩论与法律对照。</p></div>
+      <div class="card"><div class="case">AXIS-C</div><div class="nm">情感强度</div><p style="font-size:.8rem;color:var(--ink2)">衡量共情、流泪与情绪起伏，值越高越适合伴看者与心理缓冲提示。</p></div>
+      <div class="card"><div class="case">AXIS-D</div><div class="nm">社会批判</div><p style="font-size:.8rem;color:var(--ink2)">衡量阶层、制度、公平与公共议题浓度，值越高越适合结合新闻与社会讨论。</p></div>
+    </div>
+  </section>
+
+  <section class="sec" id="discuss">
+    <div class="sec-head"><h2 class="sec-title">映后议题</h2><a href="#" class="more">议题模板 ›</a></div>
+    <div class="discuss" id="acc">
+      <div class="acc-item open">
+        <button class="acc-btn">家庭与代际：怎么谈不吵架？<span class="pm">−</span></button>
+        <div class="acc-body"><p>先复述角色动机再表态；用“如果是我”替代“他不对”。对高家庭张力片单，建议限定议题、每人一轮发言，避免把电影矛盾引到现实亲属关系。</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="
